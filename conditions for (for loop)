@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    cout<<"enter the number = "<<n<<endl;
+    //multiple conditions can be enterd 
+    for(int a=2,b=3,c=4;a>=2&&b>=3&&c>=4;a--,b--,c--){
+        cout<<"all the numbers "<<a<<" , "<<b<<" , "<<c<<endl;
+    }
+    for( ; ; ){
+        if(n<15){
+            cout<<n<<endl;
+        }
+        else{
+            break;
+        }
+        n++;
+        
+    }
+    //sum of 1st n terms: with conditions inside the code
+    int i =1, sum = 0;
+    for( ; ; ){
+        if(i<=n){
+            sum=sum+i;
+        }
+        else{
+            break;
+        }
+        i++;
+    }
+    cout<<" sum = "<<sum<<endl;
+    return 0;
+}
